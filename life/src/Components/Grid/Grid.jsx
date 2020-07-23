@@ -11,7 +11,7 @@ export default function Grid() {
     return (
         <div className='grid'>
             {cell.map((cell, index) => (
-                <Cell index={index} key={index} />
+                <Cell index={index} key={index} cell={cell} />
             ))}
         </div>
     )
