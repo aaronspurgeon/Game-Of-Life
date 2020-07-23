@@ -1,13 +1,17 @@
 import React, { useState } from 'react';
 import Cell from './Cell'
 import './Grid.scss'
+import data from '../../data'
 
 export default function Grid() {
-    const [toggle, setToggle] = useState(['off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off', 'off',])
+    const [cell, setCell] = useState(data)
+
+
+
     return (
         <div className='grid'>
-            {toggle.map(() => (
-                <Cell toggle={toggle} />
+            {cell.map((cell, index) => (
+                <Cell index={index} key={index} />
             ))}
         </div>
     )

@@ -1,10 +1,16 @@
-import React from 'react'
+import React, { useState } from 'react'
 import './Grid.scss';
 
-export default function Cell() {
-    return (
-        <div className='cell'>
+export default function Cell({ onClick, index }) {
+    const [name, setName] = useState(true)
 
-        </div>
+    const handleClick = (e) => {
+        e.preventDefault()
+        setName(false)
+    }
+    return (
+        <div className={name ? 'cell off' : 'cell on'} onClick={handleClick}>
+
+        </div >
     )
 }

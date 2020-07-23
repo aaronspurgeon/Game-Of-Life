@@ -10,5 +10,13 @@
 .cell {
   width: 25px;
   height: 25px;
-  border: solid black;
+  border: 1px solid black;
+}
+
+.off {
+  background-color: white;
+}
+
+.on {
+  background-color: blue;
 }
