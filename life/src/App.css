@@ -1,9 +1,73 @@
-.App {
+h1 {
   text-align: center;
 }
 
-.cell {
-  width: 20px;
-  height: 20px;
-  border: solid 1px black;
+.grid {
+  display: "grid";
+}
+.container {
+  width: auto;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-around;
+  transition: transform 0.5s;
+  will-change: transform;
+}
+
+.preset {
+  width: 50%;
+  cursor: pointer;
+}
+
+h1 {
+  font-size: 62px;
+  font-weight: lighter;
+  margin: 5% 0;
+}
+
+p {
+  font-weight: lighter;
+  color: rgba(255, 255, 255, 0.4);
+  font-size: 16px;
+  line-height: 30px;
+}
+
+img {
+  width: 100%;
+}
+
+.control {
+  border: none;
+  color: white;
+  background-color: transparent;
+  font-size: 50px;
+  outline: none;
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+.btn {
+  color: white;
+  background-color: transparent;
+  border: 1px solid white;
+  font-size: 20px;
+  border-radius: 10%;
+  padding: 0 20px;
+  cursor: pointer;
+  outline: none;
+}
+
+.control-panel {
+  width: 100%;
+  display: flex;
+  flex-flow: row;
+}
+
+.rules {
+  margin-right: 10%;
+  margin-top: 10%;
+}
+
+.container {
+  margin-bottom: 10%;
 }
