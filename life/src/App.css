@@ -9,7 +9,7 @@ h1 {
   width: auto;
   display: flex;
   flex-flow: row nowrap;
-  justify-content: space-around;
+  justify-content: space-between;
   transition: transform 0.5s;
   will-change: transform;
 }
@@ -64,7 +64,7 @@ img {
 }
 
 .rules {
-  margin-right: 10%;
+  /* margin-right: 10%; */
   margin-top: 10%;
 }
 
